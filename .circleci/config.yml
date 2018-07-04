@@ -16,7 +16,7 @@ jobs:
           command: npm install
       - run:
           name: Testing
-          command: yarn test -- --coverage
+          command: yarn test
       - run:
           name: Submitting code coverage to codecov
           command: curl -s https://codecov.io/bash | bash
